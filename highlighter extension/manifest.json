@@ -1,0 +1,29 @@
+{
+  "name": "Special Highlighter",
+  "version": "1.0",
+  "description": "This is the highlighter extension I'm designing for my project! ",
+  "manifest_version": 2,
+   "permissions": ["storage", "declarativeContent","activeTab"],
+    "options_page": "options.html",
+  "background": {
+      "scripts": ["background.js"],
+      "persistent": false
+    },
+	 "page_action": {
+      "default_popup": "popup.html",
+	  "default_icon": {
+        "16": "images/good_enough_16x16.jpg",
+        "32": "images/good_enough_32x32.jpg",
+        "48": "images/good_enough_48x48.jpg",
+        "128": "images/good_enough_128x128.jpg"
+      },
+	   "icons": {
+      "16": "images/good_enough_16x16.jpg",
+      "32": "images/good_enough_32x32.jpg",
+      "48": "images/good_enough_48x48.jpg",
+      "128": "images/good_enough_128x128.jpg"
+    }
+	   
+    }
+    
+}
