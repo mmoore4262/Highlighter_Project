@@ -1,6 +1,12 @@
 // Master branch 
 // JavaScript source code
 let changeColor=document.getElementById('changeColor');
+let submitText=document.getElementById('highlightText');
+let takeText=document.getElementById('takeText');
+let listofsubmits=[];
+let listofTextNodes=[];
+let i=0;
+let topPosition=40;
 
 chrome.storage.sync.get('color',function(data){
 changeColor.style.backgroundColor=data.color;
@@ -16,5 +22,19 @@ changeColor.onclick = function(element) {
     });
   };
 
+takeText.onclick=function(element)
+{
+
+let new=document.createElement("P");
+let t=doument.createTextNode(highlightText.innerHTML);
+
+listofsubmits.push(new);
+lsitofTextNodes.push(t);
+
+listofsubmits[i].appendChild(t);
+document.body.appendChild(listofsubmits[i]);
+listofsubmits[i].style.top=(topPostion+5)+"%";
+i++;
+}
 
 
