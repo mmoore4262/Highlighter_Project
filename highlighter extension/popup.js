@@ -25,7 +25,7 @@ changeColor.onclick = function(element) {
 takeText.onclick=function(element)
 {
 
-let new=document.createElement("P");
+let new=document.createElement("p");
 let t=doument.createTextNode(highlightText.innerHTML);
 
 listofsubmits.push(new);
