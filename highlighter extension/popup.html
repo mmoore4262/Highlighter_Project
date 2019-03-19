@@ -15,19 +15,18 @@
 
 		}
         button{
-          height: 10%;
-          width: 30%;
-          outline: bold;
-		  margin: 1%;
+          height: 30px;
+          width: 30px;
+          outline: none;
+		  margin: 10px;
         }
-		#flavortext
+		#takeText
 		{
-			height:90%;
-			width: 90%;
-			outline: bold;
-			margin: 1%;
+			height:10%;
+			width:90%;
+			outline: none;
+			margin:10px;
 		}
-	
       </style>
     </head>
     <body>
@@ -35,8 +34,15 @@
 	  <script src="popup.js"></script>
 	  <div id="buttonDiv">
 	  </div>
-	   <div id="flavortext">
-        <p>The functionality options should be here.</p>
+
+	  <form id="inputTest">
+		Input text from this page<br>
+		<input type="text" name="takeText" id="highlightText"><br>
+	  </form>
+	  <button id="takeText" >Submit</button>
+	  </div>
+	   <div>
+        <p>Below this should be the captured text.</p>
       </div>
      
     </body>
