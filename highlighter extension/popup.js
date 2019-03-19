@@ -1,4 +1,4 @@
-// Master branch 
+
 // JavaScript source code
 let changeColor=document.getElementById('changeColor');
 let submitText=document.getElementById('highlightText');
@@ -23,7 +23,7 @@ changeColor.onclick = function(element) {
   };
 
 
-/**function addText()
+function addText()
 {
 let new=document.createElement('div');
 let newid.id="work";
@@ -36,9 +36,9 @@ listofsubmits[i].appendChild(t);
 document.body.appendChild(listofsubmits[i]);
 listofsubmits[i].style.top=(topPostion+5)+"%";
 i++;
-}**/
+}
 
-takeText.onclick=function()
+/**takeText.onclick=function()
 {
 
  new = document.createElement('div');
@@ -52,6 +52,8 @@ listofsubmits[i].appendChild(t);
 document.body.appendChild(listofsubmits[i]);
 listofsubmits[i].style.top=(topPostion+5)+"%";
 i++;
-}
+}**/
+
+takeTest.onclick=addText();
 
 
