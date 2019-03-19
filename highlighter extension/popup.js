@@ -22,11 +22,28 @@ changeColor.onclick = function(element) {
     });
   };
 
-takeText.onclick=function(element)
+
+/**function addText()
+{
+let new=document.createElement('div');
+let newid.id="work";
+let t=doument.createTextNode(highlightText.innerHTML);
+
+listofsubmits.push(new);
+lsitofTextNodes.push(t);
+
+listofsubmits[i].appendChild(t);
+document.body.appendChild(listofsubmits[i]);
+listofsubmits[i].style.top=(topPostion+5)+"%";
+i++;
+}**/
+
+takeText.onclick=function()
 {
 
-let new=document.createElement("p");
-let t=doument.createTextNode(highlightText.innerHTML);
+ new = document.createElement('div');
+ newid.id="work";
+ t=doument.createTextNode(highlightText.innerHTML);
 
 listofsubmits.push(new);
 lsitofTextNodes.push(t);
