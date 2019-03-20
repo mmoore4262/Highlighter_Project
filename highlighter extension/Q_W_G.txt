@@ -1,3 +1,18 @@
 This is going to be a glossary/wiki/questions file. Also to update me on what I need to work on in the project
 
 Chrome.storage is how to store user data for your extension
+
+
+COPY AREA 
+
+background.js 
+     var rule1= {
+     conditions: [
+          new chrome.declarativeContent.PageStateMatcher({
+            pageUrl: { hostEquals: 'www.google.com', schemes: ['https'] },
+            css: ["button[id='takeText']"]
+          })
+       ],
+        actions: [ new chrome.declarativeContent.ShowPageAction() ]
+     
+};
