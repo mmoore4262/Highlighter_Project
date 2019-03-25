@@ -41,9 +41,9 @@ i++;
 /**takeText.onclick=function()
 {
 
- new = document.createElement('div');
- newid.id="work";
- t=doument.createTextNode(highlightText.innerHTML);
+ newthing = document.createElement('div');
+ newthing.id="work";
+ t=document.createTextNode(highlightText.innerHTML);
 
 listofsubmits.push(new);
 lsitofTextNodes.push(t);
