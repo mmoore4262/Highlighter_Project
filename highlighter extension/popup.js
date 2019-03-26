@@ -1,12 +1,6 @@
 // Master branch 
 // JavaScript source code
-let changeColor=document.getElementById('changeColor');
-let submitText=document.getElementById('highlightText');
-let takeText=document.getElementById('takeText');
-let listofsubmits=[];
-let listofTextNodes=[];
-let i=0;
-let topPosition=40;
+/**Paste section: 
 
 chrome.storage.sync.get('color',function(data){
 changeColor.style.backgroundColor=data.color;
@@ -23,35 +17,69 @@ changeColor.onclick = function(element) {
   };
 
 
-/**function addText()
-{
-let new=document.createElement('div');
-let newid.id="work";
-let t=doument.createTextNode(highlightText.innerHTML);
+-----
 
-listofsubmits.push(new);
+window.onload=function(){};
+
+-----
+
+
+function addText(e)
+{
+
+ divElement = document.createElement('div');
+ divElement.id="work";
+ t=document.createTextNode(highlightText.innerHTML);
+
+listofsubmits.push(divElement);
 lsitofTextNodes.push(t);
 
 listofsubmits[i].appendChild(t);
 document.body.appendChild(listofsubmits[i]);
 listofsubmits[i].style.top=(topPostion+5)+"%";
 i++;
-}**/
+topPosition+=15;
+}
+
+-----
+
+
+**/
+
+
+
+
+ changeColor=document.getElementById('changeColor');
+ submitText=document.getElementById('highlightText');
+ takeText=document.getElementById('takeText');
+ listofsubmits=[];
+ listofTextNodes=[];
+ i=0;
+ topPosition=40;
+
+
+
+
 
 takeText.onclick=function()
 {
 
- new = document.createElement('div');
- newid.id="work";
- t=doument.createTextNode(highlightText.innerHTML);
+ divElement = document.createElement('div');
+ divElement.id="work"+i;
+ t=document.createTextNode(highlightText.value);
 
-listofsubmits.push(new);
-lsitofTextNodes.push(t);
+listofsubmits.push(divElement);
+listofTextNodes.push(t);
 
 listofsubmits[i].appendChild(t);
 document.body.appendChild(listofsubmits[i]);
-listofsubmits[i].style.top=(topPostion+5)+"%";
+
+listofsubmits[i].style.position="relative";
+listofsubmits[i].style.display="inline-block";
+listofsubmits[i].style.top=(topPosition+5)+"%";
+
 i++;
+topPosition+=15;
 }
 
 
