@@ -43,6 +43,21 @@ topPosition+=15;
 
 -----
 
+function GetSelectedText()
+{
+    if(document.getSelection)
+    {
+        sel=document.getSelection();
+        alert(sel);
+    }
+    else{
+        if(document.selection){
+            textRange=document.selection.createRange();
+            alert(textRange.text);
+        }
+    }
+}
+
 
 **/
 
@@ -50,6 +65,7 @@ topPosition+=15;
 
 
  changeColor=document.getElementById('changeColor');
+
  submitText=document.getElementById('highlightText');
  takeText=document.getElementById('takeText');
  listofsubmits=[];
@@ -81,5 +97,26 @@ listofsubmits[i].style.top=(topPosition+5)+"%";
 i++;
 topPosition+=15;
 }
+
+
+
+alertH.onclick=function()
+{
+    if(document.getSelection)
+    {
+        sel=document.getSelection();
+        alert(sel);
+    }
+    else{
+        if(document.selection){
+            textRange=document.selection.createRange();
+            alert(textRange.text);
+        }
+    }
+}
+
+
+
+    
 
 
