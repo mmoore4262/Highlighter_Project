@@ -102,17 +102,12 @@ topPosition+=15;
 
 alertH.onclick=function()
 {
-    if(document.getSelection)
-    {
-        sel=document.getSelection();
-        alert(sel);
-    }
-    else{
-        if(document.selection){
-            textRange=document.selection.createRange();
-            alert(textRange.text);
-        }
-    }
+    
+        sel=window.getSelection();
+        ralert=sel.toString();
+        alert(ralert);
+    
+    
 }
 
 
