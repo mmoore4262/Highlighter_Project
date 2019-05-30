@@ -104,8 +104,9 @@ alertH.onclick=function()
 {
     
         sel=window.getSelection();
+        range=document.crea
         ralert=sel.toString();
-        alert(ralert);
+        alert(sel);
     
     
 }
