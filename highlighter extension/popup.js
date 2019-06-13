@@ -29,7 +29,7 @@ function addText(e)
 
  divElement = document.createElement('div');
  divElement.id="work";
- t=document.createTextNode(highlightText.innerHTML);
+ t=document.createTextNode(highlightText.innerHTML+" ");
 
 listofsubmits.push(divElement);
 lsitofTextNodes.push(t);
@@ -82,20 +82,21 @@ takeText.onclick=function()
 
  divElement = document.createElement('div');
  divElement.id="work"+i;
- t=document.createTextNode(highlightText.value);
+ t=document.createTextNode(" "+highlightText.value+"\n");
 
 listofsubmits.push(divElement);
 listofTextNodes.push(t);
-
 listofsubmits[i].appendChild(t);
-document.body.appendChild(listofsubmits[i]);
 
 listofsubmits[i].style.position="relative";
 listofsubmits[i].style.display="inline-block";
 listofsubmits[i].style.top=(topPosition+5)+"%";
+listofsubmits[i].style.left="0%";
+document.body.appendChild(listofsubmits[i]);
 
 i++;
 topPosition+=15;
+
 }
 
 
